@@ -1,0 +1,317 @@
+"ID","Title","Assigned To","Case ID","Comment","Defects","Elapsed","Estimate","Forecast","In Progress","Plan","Plan ID","Priority","References","Run","Run Configuration","Run ID","Section","Section Depth","Section Description","Status","Steps","Steps","Steps (Actual Result)","Steps (Additional Info)","Steps (Expected Result)","Tested By","Tested On","Type","Version"
+"T141","Validar carregamento da lista de contas","raica Silva","C52","","","15s","300s","300s","","","","High","","teste front","","R14","Accounts Overview","0","","Passed","","Step Description:
+<font dir=""""auto"""" vertical-align: inherit;""""><font dir=""""auto"""" vertical-align: inherit;"""">1. Acesse a página principal (Dashboard). </font></font>
+
+
+
+Step Description:
+<font dir=""""auto"""" vertical-align: inherit;""""><font dir=""""auto"""" vertical-align: inherit;"""">2. Localizar a seção de resumo de contas.</font></font>
+
+
+Expected Result:
+Todas as contas vinculadas ao usuário deverão ser exibidas com ID e saldos corretos.","","1. 
+2.","1. 
+2. Todas as contas vinculadas ao usuário deverão ser exibidas com ID e saldos corretos.","raica Silva","25/5/2026 19:44","Functional",""
+"T142","Validar soma do saldo total","raica Silva","C53","","","17s","300s","300s","","","","High","","teste front","","R14","Accounts Overview","0","","Passed","","Step Description:
+1. Anote o saldo de cada conta individual. 
+
+
+
+Step Description:
+2. Observe o valor na linha “Total”.
+
+
+Expected Result:
+O valor “Total” deve ser a soma exata dos saldos individuais apresentados.","","1. 
+2.","1. 
+2. O valor “Total” deve ser a soma exata dos saldos individuais apresentados.","raica Silva","25/5/2026 19:49","Functional",""
+"T148","Validar acesso restrito (IDOR)","raica Silva","C67","","","24s","300s","24s","","","","Critical","","teste front","","R14","Accounts Overview","0","","Passed","","Step Description:
+1. Acesse uma conta própria. 
+
+
+
+Step Description:
+2. Na URL, altere o ID da conta para o ID de um terceiro. <span font-size: 11pt; font-family: Arial,sans-serif; color: #1f1f1f; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""" data-pasted=""""true"""">.</span>
+
+
+Expected Result:
+O sistema deve impedir o acesso, exibindo erro de permissão ou """"Não encontrado"""".","<span color: rgb(32, 32, 32); font-family: Arial, -apple-system, BlinkMacSystemFont, system-ui, sans-serif; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-align: left; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(241, 248, 254); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;"""" data-pasted=""""true"""">o comando é ignorado e ele mostra as contas do usuário logado, não aparece nenhuma mensagem de erro no site só no código</span>","1. 
+2.","1. 
+2. O sistema deve impedir o acesso, exibindo erro de permissão ou """"Não encontrado"""".","raica Silva","3/6/2026 13:31","Functional",""
+"T149","Listagem inicial de transações","raica Silva","C68","","","19s","300s","300s","","","","Medium","","teste front","","R14","Accounts Overview","0","","Failed","","Step Description:
+1. Acesse a tela de Histórico/Atividade da Conta pela primeira vez.
+
+
+Expected Result:
+Todas as transações recentes devem ser informadas automaticamente na tabela.","não tem uma tabela no histórico que visualize todas as transações recentes.","1","1. Todas as transações recentes devem ser informadas automaticamente na tabela.","raica Silva","25/5/2026 21:07","Functional",""
+"T150","Busca por data específica","raica Silva","C69","","","23s","","","","","","Medium","","teste front","","R14","Accounts Overview","0","","Passed","","Step Description:
+1. No filtro de histórico, selecione um dia exato. 
+
+
+
+Step Description:
+2. Aplique o filtro.
+
+
+Expected Result:
+Apenas as transações realizadas serão realizadas no dia selecionado e deverão ser exibidas.","","1. 
+2.","1. 
+2. Apenas as transações realizadas serão realizadas no dia selecionado e deverão ser exibidas.","raica Silva","26/5/2026 18:12","Functional",""
+"T143","Abertura de conta CORRENTE","Genidy Laurentino","C56","","","10s","300s","300s","","","","High","","teste front","","R14","Open New Account","0","","Passed","","Step Description:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""">1. Acessar """"Open New Account"""".</span>
+
+
+
+Step Description:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""">2. Selecionar """"CHECKING"""".</span>
+
+
+
+Step Description:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""">3. Escolher conta para depósito inicial e confirmar.</span>
+
+
+Expected Result:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""" data-pasted=""""true"""">Conta corrente criada com sucesso e disponível no """"Accounts Overview"""".</span>","","1. 
+2. 
+3.","1. 
+2. 
+3. <span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""" data-pasted=""""true"""">Conta corrente criada com sucesso e disponível no """"Accounts Overview"""".</span>","Genidy Laurentino","29/5/2026 12:10","Functional",""
+"T144","Abertura de conta POUPANÇA","Genidy Laurentino","C61","","","10s","300s","300s","","","","High","","teste front","","R14","Open New Account","0","","Passed","","Step Description:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""">1. Acessar """"Open New Account"""".</span>
+
+
+
+Step Description:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""">2. Selecionar """"SAVINGS"""".</span>
+
+
+
+Step Description:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""">3. Realizar o depósito inicial mínimo e confirmar.</span>
+
+
+Expected Result:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""" data-pasted=""""true"""">Conta poupança criada com sucesso e disponível no """"Accounts Overview"""".</span>","","1. 
+2. 
+3.","1. 
+2. 
+3. <span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""" data-pasted=""""true"""">Conta poupança criada com sucesso e disponível no """"Accounts Overview"""".</span>","Genidy Laurentino","29/5/2026 12:13","Functional",""
+"T145","Validar persistência após criação","Genidy Laurentino","C64","","","","300s","300s","","","","Medium","","teste front","","R14","Open New Account","0","","Untested","","Step Description:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #1f1f1f; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""">1. Navegar para """"Accounts Overview"""".</span>
+
+
+
+Step Description:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #1f1f1f; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""">2. Atualizar a página (F5).</span>
+
+
+Expected Result:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #1f1f1f; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""" data-pasted=""""true"""">A nova conta deve permanecer visível e com o status ativo na listagem.</span>","","1. 
+2.","1. 
+2. <span font-size: 11pt; font-family: Arial,sans-serif; color: #1f1f1f; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""" data-pasted=""""true"""">A nova conta deve permanecer visível e com o status ativo na listagem.</span>","","","Other",""
+"T146","Validar erro ao criar conta sem preencher os dados obrigatórios","Genidy Laurentino","C65","","","","300s","300s","","","","High","","teste front","","R14","Open New Account","0","","Passed","","Step Description:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #1f1f1f; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""">1.Acessar a opção “Open New Account”.</span>
+
+
+
+Step Description:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #1f1f1f; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""">2.Deixar campos obrigatórios vazios.</span>
+
+
+
+Step Description:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #1f1f1f; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""">3.Clicar em “Confirmar” ou “Abrir Conta”.</span>
+
+
+Expected Result:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #1f1f1f; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""" data-pasted=""""true"""">O sistema deve exibir mensagem de erro informando que existem campos obrigatórios não preenchidos.</span>","","1. 
+2. 
+3.","1. 
+2. 
+3. <span font-size: 11pt; font-family: Arial,sans-serif; color: #1f1f1f; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""" data-pasted=""""true"""">O sistema deve exibir mensagem de erro informando que existem campos obrigatórios não preenchidos.</span>","Rosana Dos anjos","1/6/2026 21:20","Functional",""
+"T147","Validar erro ao tentar criar conta já existente","Genidy Laurentino","C66","","","","300s","300s","","","","High","","teste front","","R14","Open New Account","0","","Passed","","Step Description:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #1f1f1f; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""">1.Acessar a área “Open New Account”.</span>
+
+
+
+Step Description:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #1f1f1f; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""">2.Selecionar um tipo de conta já existente para o usuário.</span>
+
+
+Expected Result:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #1f1f1f; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""" data-pasted=""""true"""">O sistema deve impedir a criação da conta e exibir mensagem informando que a conta já existe.</span>","","1. 
+2.","1. 
+2. <span font-size: 11pt; font-family: Arial,sans-serif; color: #1f1f1f; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""" data-pasted=""""true"""">O sistema deve impedir a criação da conta e exibir mensagem informando que a conta já existe.</span>","Rosana Dos anjos","1/6/2026 21:47","Functional",""
+"T135","Transferência entre contas","Rosana Dos anjos","C46","","","","300s","300s","raica Silva","","","Medium","","teste front","","R14","Transfer Funds","0","","Passed","","Step Description:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""">1. Ir em """"Transferir Fundos"""".</span>
+
+
+
+Step Description:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""">2. Preencher valor, conta de origem e destino.</span>
+
+
+
+Step Description:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""">3. Clique em """"Transferir"""".</span>
+
+
+Expected Result:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""" data-pasted=""""true"""">Transmissão de transmissão. O saldo deve diminuir na origem e aumentar no destino. </span>","","1. 
+2. 
+3.","1. 
+2. 
+3. <span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""" data-pasted=""""true"""">Transmissão de transmissão. O saldo deve diminuir na origem e aumentar no destino. </span>","Rosana Dos anjos","1/6/2026 14:20","Functional",""
+"T136","Validar transferência com saldo insuficiente","Rosana Dos anjos","C47","","","","300s","300s","","","","High","","teste front","","R14","Transfer Funds","0","","Passed","","Step Description:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""">1. Ir em """"Transferir Fundos"""".</span>
+
+
+
+Step Description:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""">2. Tentar transferir valor maior que o disponível.</span>
+
+
+
+Step Description:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""">3. Confirmar.</span>
+
+
+Expected Result:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""" data-pasted=""""true"""">O sistema deve bloquear a transação e exibir mensagem de """"Saldo Insuficiente""""</span>","","1. 
+2. 
+3.","1. 
+2. 
+3. <span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""" data-pasted=""""true"""">O sistema deve bloquear a transação e exibir mensagem de """"Saldo Insuficiente""""</span>","Rosana Dos anjos","1/6/2026 16:41","Functional",""
+"T137","Validar exibição de contas para transferência","Rosana Dos anjos","C48","","","","300s","300s","","","","Medium","","teste front","","R14","Transfer Funds","0","","Passed","","Step Description:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""" data-pasted=""""true"""">1. Acesse a tela de transferência de fundos.</span>
+
+
+
+Step Description:
+<span data-pasted=""""true""""><span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""" data-pasted=""""true"""">2. Abra o menu de seleção de contas.</span></span>
+
+
+Expected Result:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""">Apenas as contas do usuário logado devem aparecer para seleção nos campos de origem/destino.</span>","","1. 
+2.","1. 
+2. <span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""">Apenas as contas do usuário logado devem aparecer para seleção nos campos de origem/destino.</span>","Rosana Dos anjos","1/6/2026 17:53","Functional",""
+"T138","Validar atualização de saldo","Rosana Dos anjos","C49","","","","300s","300s","","","","Low","","teste front","","R14","Transfer Funds","0","","Passed","","Step Description:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""">1. Efetuar uma transferência.</span>
+
+
+
+Step Description:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""">2. Retornar imediatamente à tela principal.</span>
+
+
+Expected Result:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""" data-pasted=""""true"""">Os saldos das contas envolvidas devem aparecer atualizados na lista geral.</span>","","1. 
+2.","1. 
+2. <span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""" data-pasted=""""true"""">Os saldos das contas envolvidas devem aparecer atualizados na lista geral.</span>","Rosana Dos anjos","1/6/2026 18:14","Functional",""
+"T139","Validar transferência com valor zero ou negativo","Rosana Dos anjos","C50","","","","300s","300s","","","","Medium","","teste front","","R14","Transfer Funds","0","","Passed","","Step Description:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #1f1f1f; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""">1. No campo valor, inserir """"0"""" ou """"-10"""".</span>
+
+
+
+Step Description:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #1f1f1f; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""">2. Tentar transferir.</span>
+
+
+Expected Result:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""" data-pasted=""""true"""">Os saldos das contas envolvidas devem aparecer atualizados na lista geral.</span>","","1. 
+2.","1. 
+2. <span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""" data-pasted=""""true"""">Os saldos das contas envolvidas devem aparecer atualizados na lista geral.</span>","Rosana Dos anjos","1/6/2026 18:25","Functional",""
+"T140","Validar transferência para a mesma conta (Origem = Destino)","Rosana Dos anjos","C51","","","","300s","300s","","","","Medium","","teste front","","R14","Transfer Funds","0","","Passed","","Step Description:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #1f1f1f; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""">1. Selecionar a mesma conta nos campos """"From Account"""" e """"To Account"""".</span>
+
+
+
+Step Description:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #1f1f1f; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""">2. Tentar transferir.</span>
+
+
+Expected Result:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #1f1f1f; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""" data-pasted=""""true"""">O sistema deve impedir a transação ou exibir uma mensagem informando que a conta de destino deve ser diferente.</span>","","1. 
+2.","1. 
+2. <span font-size: 11pt; font-family: Arial,sans-serif; color: #1f1f1f; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""" data-pasted=""""true"""">O sistema deve impedir a transação ou exibir uma mensagem informando que a conta de destino deve ser diferente.</span>","Rosana Dos anjos","1/6/2026 19:27","Functional",""
+"T151","Validar solicitação de empréstimo","raica Silva","C70","","","16s","300s","300s","","","","Low","","teste front","","R14","Request Loan","0","","Passed","","Step Description:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""">1. Ir em """"Request Loan"""".</span>
+
+
+
+Step Description:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""">2. Preencher valor e conta de depósito.</span>
+
+
+
+Step Description:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""">3. Confirmar a solicitação.</span>
+
+
+Expected Result:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""" data-pasted=""""true"""">O sistema deve processar o pedido e o valor deve aparecer no saldo da conta destino.</span>","","1. 
+2. 
+3.","1. 
+2. 
+3. <span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""" data-pasted=""""true"""">O sistema deve processar o pedido e o valor deve aparecer no saldo da conta destino.</span>","Genidy Laurentino","28/5/2026 15:28","Functional",""
+"T152","Validar erro na solicitação de empréstimo","raica Silva","C71","","","25s","","","","","","Medium","","teste front","","R14","Request Loan","0","","Passed","","Step Description:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""">1. Tentar solicitar empréstimo com campos vazios ou dados inválidos.</span>
+
+
+
+Step Description:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""">2. Clicar em enviar.</span>
+
+
+Expected Result:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""" data-pasted=""""true"""">O sistema deve exibir alertas de erro e não processar a solicitação de crédito.</span>","","1. 
+2.","1. 
+2. <span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""" data-pasted=""""true"""">O sistema deve exibir alertas de erro e não processar a solicitação de crédito.</span>","Genidy Laurentino","28/5/2026 15:56","Functional",""
+"T153","Validar solicitação de valor excessivo","Genidy Laurentino","C72","","","33s","300s","300s","","","","Low","","teste front","","R14","Request Loan","0","","Passed","<span style=""font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap"">1<span style=""font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap"" data-pasted=""true"">. Solicitar um empréstimo com um valor acima do limite permitido pelo banco.</span></span>","","","","","Genidy Laurentino","28/5/2026 11:39","Functional",""
+"T154","Validar bloqueio de solicitação sem login no sistema","Genidy Laurentino","C73","","","39s","300s","300s","","","","Low","","teste front","","R14","Request Loan","0","","Passed","","Step Description:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""">1.Tentar acessar a área de empréstimos.</span>
+
+
+
+Step Description:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""">2.Tentar realizar uma solicitação de empréstimo.</span>
+
+
+Expected Result:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""" data-pasted=""""true"""">O sistema deve impedir a solicitação e solicitar que o usuário faça login</span>","","1. 
+2.","1. 
+2. <span font-size: 11pt; font-family: Arial,sans-serif; color: #000000; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;"""" data-pasted=""""true"""">O sistema deve impedir a solicitação e solicitar que o usuário faça login</span>","Genidy Laurentino","28/5/2026 11:27","Functional",""
+"T155","Validar cancelamento da solicitação de empréstimo antes da confirmação","Rosana Dos anjos","C74","","","11s","","","","","","Medium","","teste front","","R14","Request Loan","0","","Passed","","Step Description:
+1. Preencher os dados do pedido de empréstimo.
+
+
+
+Step Description:
+2. Navegar para outra página antes de confirmar.
+
+
+Expected Result:
+O sistema deve cancelar a operação e não registrar a solicitação de empréstimo.","","1. 
+2.","1. 
+2. O sistema deve cancelar a operação e não registrar a solicitação de empréstimo.","Genidy Laurentino","29/5/2026 9:26","Functional",""
+"T156","Validar limite mínimo para solicitação de empréstimo","Rosana Dos anjos","C75","","","","300s","300s","","","","Medium","","teste front","","R14","Request Loan","0","","Passed","","Step Description:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #1f1f1f; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;""""><font dir=""""auto"""" vertical-align: inherit;""""><font dir=""""auto"""" vertical-align: inherit;"""">1.Acessar uma área de empréstimos.</font></font></span>
+
+
+
+Step Description:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #1f1f1f; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;""""><font dir=""""auto"""" vertical-align: inherit;""""><font dir=""""auto"""" vertical-align: inherit;"""">2.Informar um valor abaixo do limite mínimo permitido.</font></font></span>
+
+
+
+Step Description:
+<span font-size: 11pt; font-family: Arial,sans-serif; color: #1f1f1f; background-color: transparent; font-weight: 400; font-style: normal; font-variant: normal; text-decoration: none; vertical-align: baseline; white-space: pre; white-space: pre-wrap;""""><font dir=""""auto"""" vertical-align: inherit;""""><font dir=""""auto"""" vertical-align: inherit;"""">3. Confirmar uma solicitação.</font></font></span>
+
+
+Expected Result:
+O sistema exibe erro interno ao receber valor abaixo do mínimo.","","1. 
+2. 
+3.","1. 
+2. 
+3. O sistema exibe erro interno ao receber valor abaixo do mínimo.","Rosana Dos anjos","29/5/2026 10:13","Functional",""
